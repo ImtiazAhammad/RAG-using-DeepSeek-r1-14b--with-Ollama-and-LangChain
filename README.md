@@ -48,7 +48,7 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 **Access the App:**
 Open your browser and navigate to _http://localhost:8501._
 
-##🖥️ Usage
+## 🖥️ Usage
 Upload a PDF:
 
 Use the file uploader to upload a PDF document.
@@ -59,7 +59,7 @@ Type your question in the chat input box.
 
 The app will retrieve relevant context from the PDF and generate a concise answer.
 
-##🧠 How It Works
+## 🧠 How It Works
 Document Loading:
 
 PDFs are loaded using ```PDFPlumberLoader``` and split into chunks using ```RecursiveCharacterTextSplitter```.
@@ -76,7 +76,7 @@ Embeddings are stored in an in-memory vector store for fast retrieval.
 
 When a question is asked, the system retrieves the most relevant chunks and uses OllamaLLM to generate an answer.
 
-##📂 Project Structure
+## 📂 Project Structure
 ```
 GenAI-PDF-RAG-Expert/
 ├── app.py                # Main Streamlit application
@@ -84,7 +84,7 @@ GenAI-PDF-RAG-Expert/
 ├── requirements.txt      # Python dependencies
 └── data/pdf/             # Directory for uploaded PDFs
 ```
-##**🤖 Models Used**
+## **🤖 Models Used**
 Embeddings: deepseek-r1:14b (via OllamaEmbeddings)
 
 LLM: deepseek-r1:14b (via OllamaLLM)
